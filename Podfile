@@ -8,7 +8,7 @@ target 'StanhopeFNC' do
 pod 'Firebase'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
-pod ‘Alamofire'
+pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => ’swift3'
 
 end
 

@@ -14,7 +14,7 @@ class NewsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var news = [News]()
-    static var imageCache = Cache()
+    static var imageCache = Cache<AnyObject,AnyObject>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
