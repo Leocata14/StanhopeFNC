@@ -18,11 +18,11 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        FIRAuth.auth()?.addAuthStateDidChangeListener({ (auth, user) in
+        FIRAuth.auth()?.addStateDidChangeListener({ (auth, user) in
             if let user = user {
                 print("Logged in with the following email address:")
                 print(user.email)
-                self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+                self.performSegue(withIdentifier: SEGUE_LOGGED_IN, sender: nil)
             } else {
                 print("No one is logged in")
             }
@@ -30,20 +30,20 @@ class LoginVC: UIViewController {
     }
     
     
-    @IBAction func loginButtonTapped(sender: AnyObject) {
+    @IBAction func loginButtonTapped(_ sender: AnyObject) {
         if let email = emailTextField.text where email != "", let pwd = passwordTextField.text where pwd != "" {
-            FIRAuth.auth()?.signInWithEmail(email, password: pwd, completion: { (user, error) in
+            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
             
                 if error != nil {
                     print(error)
                     
                     if error!.code == STATUS_ACCOUNT_NONEXIST {
-                        FIRAuth.auth()?.createUserWithEmail(email, password: pwd, completion: { (user, error) in
+                        FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                             
                             if error != nil {
                                 self.showAlert("Error creating account", msg: "This account already exists please try again")
                             } else {
-                                NSUserDefaults.standardUserDefaults().setValue(user?.uid, forKey: KEY_UID)
+                                UserDefaults.standard().setValue(user?.uid, forKey: KEY_UID)
                                 
                                 let userData = ["provider":"email"]
                                 DataService.ds.createFirebaseUser(user!.uid, user: userData)
@@ -51,7 +51,7 @@ class LoginVC: UIViewController {
                                 
                                 print("Logged in")
                                 print(DataService.ds.REF_USER_CURRENT)
-                                self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+                                self.performSegue(withIdentifier: SEGUE_LOGGED_IN, sender: nil)
                             }
                             
                         })
@@ -66,11 +66,11 @@ class LoginVC: UIViewController {
         }
     }
     
-    func showAlert(title: String, msg: String){
-        let alert = UIAlertController(title: title, message: msg, preferredStyle: .Alert)
-        let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+    func showAlert(_ title: String, msg: String){
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alert.addAction(action)
-        presentViewController(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

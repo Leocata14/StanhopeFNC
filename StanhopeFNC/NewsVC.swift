@@ -14,7 +14,7 @@ class NewsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var news = [News]()
-    static var imageCache = NSCache()
+    static var imageCache = Cache()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,22 +37,22 @@ class NewsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return news.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let article = news[indexPath.row]
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let article = news[(indexPath as NSIndexPath).row]
         
-        if let cell = tableView.dequeueReusableCellWithIdentifier("NewsCell") as? NewsCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell") as? NewsCell {
             var img: UIImage?
             
             if let url = article.imgUrl {
-                img = NewsVC.imageCache.objectForKey(url) as? UIImage
+                img = NewsVC.imageCache.object(forKey: url) as? UIImage
             }
             
             cell.configureCell(article, img: img)

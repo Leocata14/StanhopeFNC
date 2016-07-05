@@ -23,13 +23,13 @@ class NewsCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
     
-    func configureCell(news: News, img: UIImage?) {
+    func configureCell(_ news: News, img: UIImage?) {
         self.news = news
         self.title.text = news.title
         self.publishedDateLabel.text = news.pubDate
