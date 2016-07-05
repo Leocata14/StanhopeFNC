@@ -1,0 +1,6 @@
+framework module Pods_StanhopeFNC {
+  umbrella header "Pods-StanhopeFNC-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6C637E6D56FFCFEA09D65E8 /* Pods_StanhopeFNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDEBE549335AEF3D6BBF71C /* Pods_StanhopeFNC.framework */; };
 		BFCEB9B01D2AF2620066A9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9AF1D2AF2620066A9E2 /* AppDelegate.swift */; };
-		BFCEB9B21D2AF2620066A9E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9B11D2AF2620066A9E2 /* ViewController.swift */; };
+		BFCEB9B21D2AF2620066A9E2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9B11D2AF2620066A9E2 /* LoginVC.swift */; };
 		BFCEB9B51D2AF2620066A9E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCEB9B31D2AF2620066A9E2 /* Main.storyboard */; };
 		BFCEB9B71D2AF2620066A9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCEB9B61D2AF2620066A9E2 /* Assets.xcassets */; };
 		BFCEB9BA1D2AF2620066A9E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCEB9B81D2AF2620066A9E2 /* LaunchScreen.storyboard */; };
+		BFCEB9C21D2AF5820066A9E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFCEB9C11D2AF5820066A9E2 /* GoogleService-Info.plist */; };
+		BFCEB9C81D2B26380066A9E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9C71D2B26380066A9E2 /* Constants.swift */; };
+		BFCEB9CA1D2B29BA0066A9E2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9C91D2B29BA0066A9E2 /* DataService.swift */; };
+		BFCEB9CC1D2B40550066A9E2 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9CB1D2B40550066A9E2 /* NewsVC.swift */; };
+		BFCEB9CE1D2B47410066A9E2 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9CD1D2B47410066A9E2 /* MoreVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CDEBE549335AEF3D6BBF71C /* Pods_StanhopeFNC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StanhopeFNC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCEB9AC1D2AF2620066A9E2 /* StanhopeFNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StanhopeFNC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCEB9AF1D2AF2620066A9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFCEB9B11D2AF2620066A9E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFCEB9B11D2AF2620066A9E2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BFCEB9B41D2AF2620066A9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFCEB9B61D2AF2620066A9E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFCEB9B91D2AF2620066A9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFCEB9BB1D2AF2620066A9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCEB9C11D2AF5820066A9E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFCEB9C71D2B26380066A9E2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BFCEB9C91D2B29BA0066A9E2 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		BFCEB9CB1D2B40550066A9E2 /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		BFCEB9CD1D2B47410066A9E2 /* MoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		D9F5095D960122401E5FDD79 /* Pods-StanhopeFNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanhopeFNC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StanhopeFNC/Pods-StanhopeFNC.debug.xcconfig"; sourceTree = "<group>"; };
+		DEB0C74D49CDF4465F0F57CE /* Pods-StanhopeFNC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanhopeFNC.release.xcconfig"; path = "Pods/Target Support Files/Pods-StanhopeFNC/Pods-StanhopeFNC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C637E6D56FFCFEA09D65E8 /* Pods_StanhopeFNC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DF86AF3E61741D40A87F187 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CDEBE549335AEF3D6BBF71C /* Pods_StanhopeFNC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFCEB9A31D2AF2620066A9E2 = {
 			isa = PBXGroup;
 			children = (
 				BFCEB9AE1D2AF2620066A9E2 /* StanhopeFNC */,
 				BFCEB9AD1D2AF2620066A9E2 /* Products */,
+				E89D5A9A201BD1183AD6813A /* Pods */,
+				7DF86AF3E61741D40A87F187 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +79,60 @@
 		BFCEB9AE1D2AF2620066A9E2 /* StanhopeFNC */ = {
 			isa = PBXGroup;
 			children = (
+				BFCEB9C61D2B21210066A9E2 /* Resources */,
+				BFCEB9C31D2AF5AF0066A9E2 /* Model */,
+				BFCEB9C41D2AF5B50066A9E2 /* View */,
+				BFCEB9C51D2AF5C30066A9E2 /* Controller */,
+				BFCEB9C11D2AF5820066A9E2 /* GoogleService-Info.plist */,
 				BFCEB9AF1D2AF2620066A9E2 /* AppDelegate.swift */,
-				BFCEB9B11D2AF2620066A9E2 /* ViewController.swift */,
 				BFCEB9B31D2AF2620066A9E2 /* Main.storyboard */,
 				BFCEB9B61D2AF2620066A9E2 /* Assets.xcassets */,
 				BFCEB9B81D2AF2620066A9E2 /* LaunchScreen.storyboard */,
 				BFCEB9BB1D2AF2620066A9E2 /* Info.plist */,
 			);
 			path = StanhopeFNC;
+			sourceTree = "<group>";
+		};
+		BFCEB9C31D2AF5AF0066A9E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BFCEB9C41D2AF5B50066A9E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BFCEB9C51D2AF5C30066A9E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEB9B11D2AF2620066A9E2 /* LoginVC.swift */,
+				BFCEB9CB1D2B40550066A9E2 /* NewsVC.swift */,
+				BFCEB9CD1D2B47410066A9E2 /* MoreVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BFCEB9C61D2B21210066A9E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEB9C71D2B26380066A9E2 /* Constants.swift */,
+				BFCEB9C91D2B29BA0066A9E2 /* DataService.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E89D5A9A201BD1183AD6813A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9F5095D960122401E5FDD79 /* Pods-StanhopeFNC.debug.xcconfig */,
+				DEB0C74D49CDF4465F0F57CE /* Pods-StanhopeFNC.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFCEB9BE1D2AF2620066A9E2 /* Build configuration list for PBXNativeTarget "StanhopeFNC" */;
 			buildPhases = (
+				49E58C5FB3C5AF49C22D2025 /* Check Pods Manifest.lock */,
 				BFCEB9A81D2AF2620066A9E2 /* Sources */,
 				BFCEB9A91D2AF2620066A9E2 /* Frameworks */,
 				BFCEB9AA1D2AF2620066A9E2 /* Resources */,
+				84F92A45A6902371454C5722 /* Embed Pods Frameworks */,
+				7CEDF139D1160052E2E1D15E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,19 +198,72 @@
 			files = (
 				BFCEB9BA1D2AF2620066A9E2 /* LaunchScreen.storyboard in Resources */,
 				BFCEB9B71D2AF2620066A9E2 /* Assets.xcassets in Resources */,
+				BFCEB9C21D2AF5820066A9E2 /* GoogleService-Info.plist in Resources */,
 				BFCEB9B51D2AF2620066A9E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49E58C5FB3C5AF49C22D2025 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CEDF139D1160052E2E1D15E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StanhopeFNC/Pods-StanhopeFNC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84F92A45A6902371454C5722 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StanhopeFNC/Pods-StanhopeFNC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFCEB9A81D2AF2620066A9E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFCEB9B21D2AF2620066A9E2 /* ViewController.swift in Sources */,
+				BFCEB9B21D2AF2620066A9E2 /* LoginVC.swift in Sources */,
+				BFCEB9CE1D2B47410066A9E2 /* MoreVC.swift in Sources */,
 				BFCEB9B01D2AF2620066A9E2 /* AppDelegate.swift in Sources */,
+				BFCEB9C81D2B26380066A9E2 /* Constants.swift in Sources */,
+				BFCEB9CA1D2B29BA0066A9E2 /* DataService.swift in Sources */,
+				BFCEB9CC1D2B40550066A9E2 /* NewsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +376,7 @@
 		};
 		BFCEB9BF1D2AF2620066A9E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F5095D960122401E5FDD79 /* Pods-StanhopeFNC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StanhopeFNC/Info.plist;
@@ -260,6 +388,7 @@
 		};
 		BFCEB9C01D2AF2620066A9E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEB0C74D49CDF4465F0F57CE /* Pods-StanhopeFNC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StanhopeFNC/Info.plist;
@@ -288,6 +417,7 @@
 				BFCEB9C01D2AF2620066A9E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
