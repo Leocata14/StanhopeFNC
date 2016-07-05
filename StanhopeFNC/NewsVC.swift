@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class NewsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
@@ -26,10 +27,26 @@ class NewsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         tableView.estimatedRowHeight = 225
         self.title = "News"
         
-//        DataService.ds.REF_NEWS.observeEventType(FIRDataEventType.Value) { (snapshot) in
-//            
-//            
-//        }
+        DataService.ds.REF_NEWS.observe(FIRDataEventType.value) { (snapshot) in
+            self.news = []
+            if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                for snap in snapshots {
+                    
+                    if let newsDict = snap.value as? Dictionary<String, AnyObject> {
+                        
+                        let key = snap.key
+                        let news = News(newsKey: key, dicitionary: newsDict)
+                        self.news.append(news)
+                        
+                        print(newsDict)
+                    }
+                }
+                
+                
+            }
+        }
+        
+
     }
 
     override func didReceiveMemoryWarning() {
