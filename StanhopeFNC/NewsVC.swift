@@ -7,13 +7,29 @@
 //
 
 import UIKit
+import Firebase
 
-class NewsVC: UIViewController {
+class NewsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var news = [News]()
+    static var imageCache = NSCache()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.estimatedRowHeight = 225
+        self.title = "News"
+        
+//        DataService.ds.REF_NEWS.observeEventType(FIRDataEventType.Value) { (snapshot) in
+//            
+//            
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +37,30 @@ class NewsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
-    */
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return news.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let article = news[indexPath.row]
+        
+        if let cell = tableView.dequeueReusableCellWithIdentifier("NewsCell") as? NewsCell {
+            var img: UIImage?
+            
+            if let url = article.imgUrl {
+                img = NewsVC.imageCache.objectForKey(url) as? UIImage
+            }
+            
+            cell.configureCell(article, img: img)
+            return cell
+        } else {
+            return NewsCell()
+        }
+    }
+
 
 }

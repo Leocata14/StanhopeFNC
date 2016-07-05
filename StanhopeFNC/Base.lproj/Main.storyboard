@@ -75,13 +75,51 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ew7-83-YOU">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsCell" rowHeight="225" id="Ew7-83-YOU" customClass="NewsCell" customModule="StanhopeFNC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="225"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ew7-83-YOU" id="TqN-FJ-iah">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jarrad" translatesAutoresizingMaskIntoConstraints="NO" id="fOj-1e-bn5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="224"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Article Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wh6-4K-IFN">
+                                                    <rect key="frame" x="8" y="195" width="584" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="9No-hT-WJm"/>
+                                                        <constraint firstAttribute="width" constant="584" id="FJC-7L-IKM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21st June, 2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvS-VI-p3c">
+                                                    <rect key="frame" x="8" y="181" width="584" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="zvS-VI-p3c" secondAttribute="bottom" constant="20" id="EvK-bR-tMS"/>
+                                                <constraint firstItem="fOj-1e-bn5" firstAttribute="leading" secondItem="TqN-FJ-iah" secondAttribute="leading" id="KRt-hT-uhZ"/>
+                                                <constraint firstItem="zvS-VI-p3c" firstAttribute="trailing" secondItem="TqN-FJ-iah" secondAttribute="trailingMargin" id="PUJ-sI-hXg"/>
+                                                <constraint firstAttribute="bottom" secondItem="fOj-1e-bn5" secondAttribute="bottom" id="REz-jg-bt7"/>
+                                                <constraint firstItem="zvS-VI-p3c" firstAttribute="leading" secondItem="TqN-FJ-iah" secondAttribute="leadingMargin" id="fu6-G3-gVp"/>
+                                                <constraint firstAttribute="trailing" secondItem="fOj-1e-bn5" secondAttribute="trailing" id="ixQ-T2-9ld"/>
+                                                <constraint firstItem="fOj-1e-bn5" firstAttribute="top" secondItem="TqN-FJ-iah" secondAttribute="top" id="jLi-z9-zpT"/>
+                                                <constraint firstItem="Wh6-4K-IFN" firstAttribute="leading" secondItem="TqN-FJ-iah" secondAttribute="leadingMargin" id="nuY-zV-SlU"/>
+                                                <constraint firstItem="Wh6-4K-IFN" firstAttribute="bottom" secondItem="TqN-FJ-iah" secondAttribute="bottomMargin" id="rgE-C0-bC2"/>
+                                                <constraint firstItem="Wh6-4K-IFN" firstAttribute="trailing" secondItem="TqN-FJ-iah" secondAttribute="trailingMargin" id="x3Z-ft-cVX"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsImg" destination="fOj-1e-bn5" id="BgO-ar-YLT"/>
+                                            <outlet property="publishedDateLabel" destination="zvS-VI-p3c" id="3wp-Pr-VNc"/>
+                                            <outlet property="title" destination="Wh6-4K-IFN" id="rpj-et-kUU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -89,6 +127,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hct-lP-4gy"/>
+                    <connections>
+                        <outlet property="tableView" destination="giU-o1-03F" id="kB5-dP-SQ3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8g-Vc-mQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -317,4 +358,7 @@
             <point key="canvasLocation" x="-1048" y="2701"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="jarrad" width="320" height="212"/>
+    </resources>
 </document>

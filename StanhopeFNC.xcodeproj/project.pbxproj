@@ -18,6 +18,8 @@
 		BFCEB9CA1D2B29BA0066A9E2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9C91D2B29BA0066A9E2 /* DataService.swift */; };
 		BFCEB9CC1D2B40550066A9E2 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9CB1D2B40550066A9E2 /* NewsVC.swift */; };
 		BFCEB9CE1D2B47410066A9E2 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9CD1D2B47410066A9E2 /* MoreVC.swift */; };
+		BFEDA8D81D2C1DF100515D6A /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDA8D71D2C1DF100515D6A /* News.swift */; };
+		BFEDA8DA1D2C208A00515D6A /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDA8D91D2C208A00515D6A /* NewsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		BFCEB9C91D2B29BA0066A9E2 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		BFCEB9CB1D2B40550066A9E2 /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		BFCEB9CD1D2B47410066A9E2 /* MoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		BFEDA8D71D2C1DF100515D6A /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		BFEDA8D91D2C208A00515D6A /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		D9F5095D960122401E5FDD79 /* Pods-StanhopeFNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanhopeFNC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StanhopeFNC/Pods-StanhopeFNC.debug.xcconfig"; sourceTree = "<group>"; };
 		DEB0C74D49CDF4465F0F57CE /* Pods-StanhopeFNC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanhopeFNC.release.xcconfig"; path = "Pods/Target Support Files/Pods-StanhopeFNC/Pods-StanhopeFNC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,7 @@
 		BFCEB9C31D2AF5AF0066A9E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BFEDA8D71D2C1DF100515D6A /* News.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 		BFCEB9C41D2AF5B50066A9E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BFEDA8D91D2C208A00515D6A /* NewsCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -258,11 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFEDA8D81D2C1DF100515D6A /* News.swift in Sources */,
 				BFCEB9B21D2AF2620066A9E2 /* LoginVC.swift in Sources */,
 				BFCEB9CE1D2B47410066A9E2 /* MoreVC.swift in Sources */,
 				BFCEB9B01D2AF2620066A9E2 /* AppDelegate.swift in Sources */,
 				BFCEB9C81D2B26380066A9E2 /* Constants.swift in Sources */,
 				BFCEB9CA1D2B29BA0066A9E2 /* DataService.swift in Sources */,
+				BFEDA8DA1D2C208A00515D6A /* NewsCell.swift in Sources */,
 				BFCEB9CC1D2B40550066A9E2 /* NewsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
