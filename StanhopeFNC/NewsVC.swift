@@ -27,7 +27,7 @@ class NewsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         tableView.estimatedRowHeight = 225
         self.title = "News"
         
-        DataService.ds.REF_NEWS.observe(FIRDataEventType.value) { (snapshot) in
+        DataService.ds.REF_NEWS.observe(FIRDataEventType.value, with: { (snapshot) in
             self.news = []
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshots {
@@ -44,7 +44,8 @@ class NewsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
                 
                 
             }
-        }
+            self.tableView.reloadData()
+        })
         
 
     }
@@ -76,6 +77,17 @@ class NewsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
             return cell
         } else {
             return NewsCell()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == SEGUE_NEWS_DETAIL {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destinationViewController as! NewsDetailVC
+                
+                destinationController.newsUrl = news[indexPath.row].url
+                
+            }
         }
     }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B6C637E6D56FFCFEA09D65E8 /* Pods_StanhopeFNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDEBE549335AEF3D6BBF71C /* Pods_StanhopeFNC.framework */; };
+		BF2ED7A01D2CAC0000ED1AA4 /* NewsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2ED79F1D2CAC0000ED1AA4 /* NewsDetailVC.swift */; };
 		BFCEB9B01D2AF2620066A9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9AF1D2AF2620066A9E2 /* AppDelegate.swift */; };
 		BFCEB9B21D2AF2620066A9E2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB9B11D2AF2620066A9E2 /* LoginVC.swift */; };
 		BFCEB9B51D2AF2620066A9E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCEB9B31D2AF2620066A9E2 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		5CDEBE549335AEF3D6BBF71C /* Pods_StanhopeFNC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StanhopeFNC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2ED79F1D2CAC0000ED1AA4 /* NewsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailVC.swift; sourceTree = "<group>"; };
 		BFCEB9AC1D2AF2620066A9E2 /* StanhopeFNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StanhopeFNC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCEB9AF1D2AF2620066A9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFCEB9B11D2AF2620066A9E2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				BFCEB9B11D2AF2620066A9E2 /* LoginVC.swift */,
 				BFCEB9CB1D2B40550066A9E2 /* NewsVC.swift */,
 				BFCEB9CD1D2B47410066A9E2 /* MoreVC.swift */,
+				BF2ED79F1D2CAC0000ED1AA4 /* NewsDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFEDA8D81D2C1DF100515D6A /* News.swift in Sources */,
+				BF2ED7A01D2CAC0000ED1AA4 /* NewsDetailVC.swift in Sources */,
 				BFCEB9B21D2AF2620066A9E2 /* LoginVC.swift in Sources */,
 				BFCEB9CE1D2B47410066A9E2 /* MoreVC.swift in Sources */,
 				BFCEB9B01D2AF2620066A9E2 /* AppDelegate.swift in Sources */,
@@ -335,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -375,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

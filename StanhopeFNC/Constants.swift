@@ -16,6 +16,6 @@ let STATUS_ACCOUNT_NONEXIST = 17011
 
 //Segues
 let SEGUE_LOGGED_IN = "loggedIn"
-let SEGUE_NEWS_DETAL = "newsDetail"
+let SEGUE_NEWS_DETAIL = "newsDetail"
 let SEGUE_RESULTS_DETAIL = "resultsDetail"
 let SEGUE_MATCH_DETAIL = "matchDetail"
