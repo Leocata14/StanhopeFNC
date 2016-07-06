@@ -18,6 +18,7 @@ class DataService {
     private var _REF_BASE = URL_BASE
     private var _REF_USERS = URL_BASE.child("users")
     private var _REF_NEWS = URL_BASE.child("news")
+    private var _REF_RESULTS = URL_BASE.child("results")
     
     var REF_BASE: FIRDatabaseReference {
         return _REF_BASE
@@ -29,6 +30,10 @@ class DataService {
     
     var REF_NEWS: FIRDatabaseReference {
         return _REF_NEWS
+    }
+    
+    var REF_RESULTS: FIRDatabaseReference {
+        return _REF_RESULTS
     }
     
     
