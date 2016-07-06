@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B6C637E6D56FFCFEA09D65E8 /* Pods_StanhopeFNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDEBE549335AEF3D6BBF71C /* Pods_StanhopeFNC.framework */; };
 		BF086C0D1D2CC61900E46EE6 /* ResultsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF086C0C1D2CC61900E46EE6 /* ResultsTableVC.swift */; };
+		BF086C0F1D2D6BCD00E46EE6 /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF086C0E1D2D6BCD00E46EE6 /* EventsVC.swift */; };
 		BF2ED7A01D2CAC0000ED1AA4 /* NewsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2ED79F1D2CAC0000ED1AA4 /* NewsDetailVC.swift */; };
 		BF2ED7A21D2CBC5F00ED1AA4 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2ED7A11D2CBC5F00ED1AA4 /* Team.swift */; };
 		BF2ED7A41D2CBCB000ED1AA4 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2ED7A31D2CBCB000ED1AA4 /* TeamCell.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		5CDEBE549335AEF3D6BBF71C /* Pods_StanhopeFNC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StanhopeFNC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF086C0C1D2CC61900E46EE6 /* ResultsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableVC.swift; sourceTree = "<group>"; };
+		BF086C0E1D2D6BCD00E46EE6 /* EventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
 		BF2ED79F1D2CAC0000ED1AA4 /* NewsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailVC.swift; sourceTree = "<group>"; };
 		BF2ED7A11D2CBC5F00ED1AA4 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		BF2ED7A31D2CBCB000ED1AA4 /* TeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				BF086C0C1D2CC61900E46EE6 /* ResultsTableVC.swift */,
 				BFCEB9CD1D2B47410066A9E2 /* MoreVC.swift */,
 				BF2ED79F1D2CAC0000ED1AA4 /* NewsDetailVC.swift */,
+				BF086C0E1D2D6BCD00E46EE6 /* EventsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF086C0F1D2D6BCD00E46EE6 /* EventsVC.swift in Sources */,
 				BFEDA8D81D2C1DF100515D6A /* News.swift in Sources */,
 				BF2ED7A01D2CAC0000ED1AA4 /* NewsDetailVC.swift in Sources */,
 				BFCEB9B21D2AF2620066A9E2 /* LoginVC.swift in Sources */,
